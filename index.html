@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div class="root">
+      <header>
+        <div class="header-bar">
+          <div class="first-part">
+            <i class="icon-1 fa-brands fa-spotify"></i>
+          </div>
+
+          <div class="second-part">
+            <div class="home">
+              <i class="icon-2 fa-solid fa-house"></i>
+            </div>
+
+            <div class="search">
+              <i class="icon-3 fa-solid fa-magnifying-glass"></i>
+              <input
+                class="search-input"
+                type="search"
+                placeholder="What do you want to play?"
+              />
+            </div>
+          </div>
+
+          <div class="third-part">
+            <button class="explore-premium">Explore Premium</button>
+
+            <div class="arrow">
+              <i class="fa-solid fa-arrow-down"></i>
+              <span class="arrow-text">Install App</span>
+            </div>
+
+            <div>
+              <i class="fa-regular fa-bell"></i>
+            </div>
+
+            <button class="admin">
+              <img
+                src="img/WhatsApp Image 2025-03-26 at 16.43.43.jpeg"
+                class="img"
+                alt="Admin"
+              />
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="first-section">
+          <div class="first-section-1">
+            <h3 class="text-head-left">Your Library</h3>
+
+            <div class="plus">
+              <i class="plus-icon fa-solid fa-plus"></i>
+            </div>
+
+            <div class="expand">
+              <i class="expand-icon fa-solid fa-up-right-and-down-left-from-center"></i>
+            </div>
+          </div>
+
+          <div class="first-section-2"></div>
+        </section>
+
+        <section class="second-section">
+            <div class="second-section-1">
+              <div class="button-3">
+                <button class="buttonActive" id="allButton">All</button>
+                <button class="buttonActive" id="music">Music</button>
+                <button class="buttonActive" id="podcast">Podcast</button>
+              </div>
+
+            </div>
+        </section>
+        <section class="third-section"></section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
