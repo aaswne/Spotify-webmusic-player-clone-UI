@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify - Web Player</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -28,11 +32,15 @@
             </div>
 
             <div class="search">
-              <i class="icon-3 fa-solid fa-magnifying-glass"></i>
+              <i
+                class="icon-3 fa-solid fa-magnifying-glass"
+                id="search-icon"
+              ></i>
               <input
                 class="search-input"
                 type="search"
                 placeholder="What do you want to play?"
+                id="search-small"
               />
             </div>
           </div>
@@ -50,17 +58,14 @@
             </div>
 
             <button class="admin">
-              <img
-                src="img/admin.jpeg"
-                class="img"
-                alt="Admin"
-              />
+              <img src="img/admin.jpeg" class="img" alt="Admin" />
             </button>
           </div>
         </div>
       </header>
 
       <main>
+        
         <section class="first-section">
           <div class="first-section-1">
             <h3 class="text-head-left">Your Library</h3>
@@ -74,143 +79,141 @@
                 class="expand-icon fa-solid fa-up-right-and-down-left-from-center"
               ></i>
             </div>
-             <div class="button-1">
-              <button class="buttonActive-1" id="playlist-buttons">Playlists</button>
-              <button class="buttonActive-1" id="playlist-buttons">Artists</button>
-              <button class="buttonActive-1" id="playlist-buttons">Albums</button>
+            <div class="button-1">
+              <button class="buttonActive-1" id="playlist-buttons">
+                Playlists
+              </button>
+              <button class="buttonActive-1" id="playlist-buttons">
+                Artists
+              </button>
+              <button class="buttonActive-1" id="playlist-buttons">
+                Albums
+              </button>
             </div>
           </div>
-        <div class="first-section-2">
-          <div class="left-2-liked">
-                <i class="search-icon fa-solid fa-magnifying-glass"></i>
-                <p class="Recents">Recents</p>
-                
-          </div>
-           <div class="left-3-liked">
-            <img src="img/liked.png"class="liked-img">
-            <p class="liked-text">
-              <span class="L-song">Liked Songs</span>
-              <br>
-              <span class="P-song">Playlist.57 songs</span>
-            </p>
-          
-          </div>
-          <div class="left-3-liked">
-             <img src="img/1.png"class="liked-img">
-            <p class="liked-text">
-              <span class="L-song">Rey</span>
-              <br>
-              <span class="P-song">Playlist.aaswne</span>
-            </p>
-          
-          </div>
-          <div class="left-3-liked">
-             <img src="img/2.png"class="liked-img">
-            <p class="liked-text">
-              <span class="L-song">Hgih🍄</span>
-              <br>
-              <span class="P-song">Playlist.aaswne</span>
-            </p>
-          
-          </div>
-          <div class="left-3-liked">
-             <img src="img/3.png"class="liked-img">
-            <p class="liked-text">
-              <span class="L-song">Ssup🍒's</span>
-              <br>
-              <span class="P-song">Playlist.Devwww</span>
-            </p>
-          
-          </div>
+          <div class="first-section-2">
+            <div class="left-2-liked">
+              <div class="container-search">
+                <label for="searchInput"
+                  ><i class="search-icon fa-solid fa-magnifying-glass"></i
+                ></label>
 
-           <div class="left-3-liked">
-             <img src="img/9.png"class="round-img">
-            <p class="liked-text">
-              <span class="L-song">Sajanka</span>
-              <br>
-              <span class="P-song">Artist</span>
-            </p>
-          
-          </div>
+                <input
+                  class="search-small"
+                  type="search"
+                  placeholder="Search in Your Library "
+                  id="searchInput"
+                />
+              </div>
 
+              <p class="Recents">Recents</p>
+            </div>
+            <div class="left-3-liked">
+              <img src="img/liked.png" class="liked-img" />
+              <p class="liked-text">
+                <span class="L-song">Liked Songs</span>
+                <br />
+                <span class="P-song">Playlist.57 songs</span>
+              </p>
+            </div>
+            <div class="left-3-liked">
+              <img src="img/1.png" class="liked-img" />
+              <p class="liked-text">
+                <span class="L-song">Rey</span>
+                <br />
+                <span class="P-song">Playlist.aaswne</span>
+              </p>
+            </div>
+            <div class="left-3-liked">
+              <img src="img/2.png" class="liked-img" />
+              <p class="liked-text">
+                <span class="L-song">Hgih🍄</span>
+                <br />
+                <span class="P-song">Playlist.aaswne</span>
+              </p>
+            </div>
+            <div class="left-3-liked">
+              <img src="img/3.png" class="liked-img" />
+              <p class="liked-text">
+                <span class="L-song">Ssup🍒's</span>
+                <br />
+                <span class="P-song">Playlist.Devwww</span>
+              </p>
+            </div>
 
-          <div class="left-3-liked">
-             <img src="img/4.png"class="round-img">
-            <p class="liked-text">
-              <span class="L-song">The Culturehood</span>
-              <br>
-              <span class="P-song">Playlist.The Culturehood</span>
-            </p>
-          
-          </div>
-          <div class="left-3-liked">
-             <img src="img/nj.png"class="round-img">
-            <p class="liked-text">
-              <span class="L-song">NJ</span>
-              <br>
-              <span class="P-song">Artist</span>
-            </p>
-          
-          </div>
-          <div class="left-3-liked">
-             <img src="img/vedan.png"class="round-img">
-            <p class="liked-text">
-              <span class="L-song">Vedan</span>
-              <br>
-              <span class="P-song">Artist</span>
-            </p>
-          
-          </div>
+            <div class="left-3-liked">
+              <img src="img/9.png" class="round-img" />
+              <p class="liked-text">
+                <span class="L-song">Sajanka</span>
+                <br />
+                <span class="P-song">Artist</span>
+              </p>
+            </div>
 
-          <div class="left-3-liked">
-             <img src="img/dabzee.png"class="round-img">
-            <p class="liked-text">
-              <span class="L-song">Dabzee</span>
-              <br>
-              <span class="P-song">Artist</span>
-            </p>
-          
-          </div>
+            <div class="left-3-liked">
+              <img src="img/4.png" class="round-img" />
+              <p class="liked-text">
+                <span class="L-song">The Culturehood</span>
+                <br />
+                <span class="P-song">Playlist.The Culturehood</span>
+              </p>
+            </div>
+            <div class="left-3-liked">
+              <img src="img/nj.png" class="round-img" />
+              <p class="liked-text">
+                <span class="L-song">NJ</span>
+                <br />
+                <span class="P-song">Artist</span>
+              </p>
+            </div>
+            <div class="left-3-liked">
+              <img src="img/vedan.png" class="round-img" />
+              <p class="liked-text">
+                <span class="L-song">Vedan</span>
+                <br />
+                <span class="P-song">Artist</span>
+              </p>
+            </div>
 
-           <div class="left-3-liked">
-             <img src="img/10.png"class="round-img">
-            <p class="liked-text">
-              <span class="L-song">Barsha</span>
-              <br>
-              <span class="P-song">Artist</span>
-            </p>
-          
-          </div>
-           <div class="left-3-liked">
-             <img src="img/08.png"class="round-img">
-            <p class="liked-text">
-              <span class="L-song">Damru</span>
-              <br>
-              <span class="P-song">Artist</span>
-            </p>
-          
-          </div>
-           <div class="left-3-liked">
-             <img src="img/07.png"class="round-img">
-            <p class="liked-text">
-              <span class="L-song">Fungus Funk</span>
-              <br>
-              <span class="P-song">Artist</span>
-            </p>
-          
-          </div>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          
-          </div>
-        
-       
-          
+            <div class="left-3-liked">
+              <img src="img/dabzee.png" class="round-img" />
+              <p class="liked-text">
+                <span class="L-song">Dabzee</span>
+                <br />
+                <span class="P-song">Artist</span>
+              </p>
+            </div>
 
-          
+            <div class="left-3-liked">
+              <img src="img/10.png" class="round-img" />
+              <p class="liked-text">
+                <span class="L-song">Barsha</span>
+                <br />
+                <span class="P-song">Artist</span>
+              </p>
+            </div>
+            <div class="left-3-liked">
+              <img src="img/08.png" class="round-img" />
+              <p class="liked-text">
+                <span class="L-song">Damru</span>
+                <br />
+                <span class="P-song">Artist</span>
+              </p>
+            </div>
+            <div class="left-3-liked">
+              <img src="img/07.png" class="round-img" />
+              <p class="liked-text">
+                <span class="L-song">Fungus Funk</span>
+                <br />
+                <span class="P-song">Artist</span>
+              </p>
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+          </div>
         </section>
 
         <section class="second-section">
@@ -221,40 +224,367 @@
               <button class="buttonActive" id="podcast">Podcast</button>
             </div>
           </div>
+
+          <!--SECOND SECTION MIDDLE-->
+          <div class="second-section-2">
+            <div class="second-section-2-group">
+              <div class="small-div-center">
+                <div class="inner-img">
+                  <img src="img/inner.png" alt="" id="inner-image" />
+                  <p class="inner-p">Ahista Ahista</p>
+                  <div class="pause-container" style="margin-left: 137px">
+                    <!-- Green circle -->
+                    <i
+                      class="bi bi-circle-fill"
+                      style="
+                        color: green;
+                        font-size: 35px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                      "
+                    ></i>
+
+                    <!-- Black play symbol -->
+                    <i
+                      class="bi bi-play-fill"
+                      style="
+                        color: black;
+                        font-size: 30px;
+                        margin-top: -11px;
+                        margin-left: -10px;
+                        position: absolute;
+                        top: 15px;
+                        left: 15px;
+                      "
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="small-div-center">
+                <div class="inner-img">
+                  <img src="img/inner1.png" alt="" id="inner-image" />
+                  <p class="inner-p">NERA</p>
+                  <div class="pause-container" style="margin-left: 182px">
+                    <!-- Green circle -->
+                    <i
+                      class="bi bi-circle-fill"
+                      style="
+                        color: green;
+                        font-size: 35px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                      "
+                    ></i>
+
+                    <!-- Black play symbol -->
+                    <i
+                      class="bi bi-play-fill"
+                      style="
+                        color: black;
+                        font-size: 30px;
+                        margin-top: -11px;
+                        margin-left: -10px;
+                        position: absolute;
+                        top: 15px;
+                        left: 15px;
+                      "
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="small-div-center">
+                <div class="inner-img">
+                  <img src="img/inner2.png" alt="" id="inner-image" />
+                  <p class="inner-p">SHERIYA</p>
+                  <div class="pause-container" style="margin-left: 163px">
+                    <!-- Green circle -->
+                    <i
+                      class="bi bi-circle-fill"
+                      style="
+                        color: green;
+                        font-size: 35px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                      "
+                    ></i>
+
+                    <!-- Black play symbol -->
+                    <i
+                      class="bi bi-play-fill"
+                      style="
+                        color: black;
+                        font-size: 30px;
+                        margin-top: -11px;
+                        margin-left: -10px;
+                        position: absolute;
+                        top: 15px;
+                        left: 15px;
+                      "
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="small-div-center">
+                <div class="inner-img">
+                  <img src="img/inner3.png" alt="" id="inner-image" />
+                  <p class="inner-p">Delicious Confusion</p>
+                  <div class="pause-container" style="margin-left: 93px">
+                    <!-- Green circle -->
+                    <i
+                      class="bi bi-circle-fill"
+                      style="
+                        color: green;
+                        font-size: 35px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                      "
+                    ></i>
+
+                    <!-- Black play symbol -->
+                    <i
+                      class="bi bi-play-fill"
+                      style="
+                        color: black;
+                        font-size: 30px;
+                        margin-top: -11px;
+                        margin-left: -10px;
+                        position: absolute;
+                        top: 15px;
+                        left: 15px;
+                      "
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="small-div-center">
+                <div class="inner-img">
+                  <img src="img/inner4.png" alt="" id="inner-image" />
+                  <p class="inner-p">Manzil</p>
+                  <div class="pause-container" style="margin-left: 179px">
+                    <!-- Green circle -->
+                    <i
+                      class="bi bi-circle-fill"
+                      style="
+                        color: green;
+                        font-size: 35px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                      "
+                    ></i>
+
+                    <!-- Black play symbol -->
+                    <i
+                      class="bi bi-play-fill"
+                      style="
+                        color: black;
+                        font-size: 30px;
+                        margin-top: -11px;
+                        margin-left: -10px;
+                        position: absolute;
+                        top: 15px;
+                        left: 15px;
+                      "
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="small-div-center">
+                <div class="inner-img">
+                  <img src="img/inner5.png" alt="" id="inner-image" />
+                  <p class="inner-p">Aladdin Bakery</p>
+                  <div class="pause-container" style="margin-left: 125px">
+                    <!-- Green circle -->
+                    <i
+                      class="bi bi-circle-fill"
+                      style="
+                        color: green;
+                        font-size: 35px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                      "
+                    ></i>
+
+                    <!-- Black play symbol -->
+                    <i
+                      class="bi bi-play-fill"
+                      style="
+                        color: black;
+                        font-size: 30px;
+                        margin-top: -11px;
+                        margin-left: -10px;
+                        position: absolute;
+                        top: 15px;
+                        left: 15px;
+                      "
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="small-div-center">
+                <div class="inner-img">
+                  <img src="img/inner6.png" alt="" id="inner-image" />
+                  <p class="inner-p">Deep Jungle Walk</p>
+                  <div class="pause-container" style="margin-left: 109px">
+                    <!-- Green circle -->
+                    <i
+                      class="bi bi-circle-fill"
+                      style="
+                        color: green;
+                        font-size: 35px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                      "
+                    ></i>
+
+                    <!-- Black play symbol -->
+                    <i
+                      class="bi bi-play-fill"
+                      style="
+                        color: black;
+                        font-size: 30px;
+                        margin-top: -11px;
+                        margin-left: -10px;
+                        position: absolute;
+                        top: 15px;
+                        left: 15px;
+                      "
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="small-div-center">
+                <div class="inner-img">
+                  <img src="img/inner7.png" alt="" id="inner-image" />
+                  <p class="inner-p">KAAYI</p>
+                  <div class="pause-container" style="margin-left: 182px">
+                    <!-- Green circle -->
+                    <i
+                      class="bi bi-circle-fill"
+                      style="
+                        color: green;
+                        font-size: 35px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                      "
+                    ></i>
+
+                    <!-- Black play symbol -->
+                    <i
+                      class="bi bi-play-fill"
+                      style="
+                        color: black;
+                        font-size: 30px;
+                        margin-top: -11px;
+                        margin-left: -10px;
+                        position: absolute;
+                        top: 15px;
+                        left: 15px;
+                      "
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-space-second-section-middle">
+            <p class="made-for">Made For</p>
+          </div>
+          <div class="Name-space-second-section-middle">
+            <p class="aaswne">aaswne</p>
+          </div>
+          <!--middle-scrolable-first-start-->
+          <div class="cards-center-group">
+            <div class="cards-middle">
+              <div class="inner-image-container">
+                <img src="img/scrolable-1.png" id="card-image-center" alt="" />
+              </div>
+            </div>
+
+            <div class="cards-middle">
+              <div class="inner-image-container">
+                <img src="img/scrolable-1.png" id="card-image-center" alt="" />
+              </div>
+            </div>
+
+            <div class="cards-middle">
+              <div class="inner-image-container">
+                <img src="img/scrolable-1.png" id="card-image-center" alt="" />
+              </div>
+            </div>
+
+            <div class="cards-middle">
+              <div class="inner-image-container">
+                <img src="img/scrolable-1.png" id="card-image-center" alt="" />
+              </div>
+            </div>
+
+            <div class="cards-middle">
+              <div class="inner-image-container">
+                <img src="img/scrolable-1.png" id="card-image-center" alt="" />
+              </div>
+            </div>
+
+            <div class="cards-middle">
+              <div class="inner-image-container">
+                <img src="img/scrolable-1.png" id="card-image-center" alt="" />
+              </div>
+            </div>
+
+            <div class="cards-middle">
+              <div class="inner-image-container">
+                <img src="img/scrolable-1.png" id="card-image-center" alt="" />
+              </div>
+            </div>
+          </div>
+          <!--middle-scrolable-first-end-->
         </section>
+
+        <div class="spacer"></div>
+
+        
+  
+
         <section class="third-section">
-          <div class="third-section-1">
-
-
-          </div>
-          <div class="third-section-2">
-
-          </div>
+          <div class="third-section-1"></div>
+          <div class="third-section-2"></div>
         </section>
       </main>
       <footer>
         <div class="footer-bar">
           <div class="first-foot">
             <div class="V-IMG">
-            <img src="img/19 September 2024  @vedanwithword at punalur ✨….jpeg" class="img-vedan" alt="">
+              <img
+                src="img/19 September 2024  @vedanwithword at punalur ✨….jpeg"
+                class="img-vedan"
+                alt=""
+              />
             </div>
             <div class="V-TEXT">
               <p>
                 <span class="song-name">MAUNA LOA</span>
-                <br>
+                <br />
                 <span class="author-name">Vedan,Azwin</span>
-
               </p>
             </div>
-
           </div>
-          <div class="second-foot">
-
-          </div>
-          <div class="third-foot">
-
-          </div>
-
+          <div class="second-foot"></div>
+          <div class="third-foot"></div>
         </div>
       </footer>
     </div>
